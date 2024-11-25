@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.productCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px;
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 6px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
