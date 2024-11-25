@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import {createHashRouter, RouterProvider} from 'react-router-dom';
 
-import Products from "./components/products/Products";
+import Products from "./components/products/Products"
 import Product from "./components/product/Product";
 import NotFound from './components/notFound/notFound';
 
@@ -16,7 +16,7 @@ const router = createHashRouter([
     element: <Product />
   },
   {
-    path: '*',
+    path: '/gg',
     element: <NotFound />
   }
 ])
