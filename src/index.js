@@ -16,7 +16,7 @@ const router = createHashRouter([
     element: <Product />
   },
   {
-    path: '/gg',
+    path: '*',
     element: <NotFound />
   }
 ])
