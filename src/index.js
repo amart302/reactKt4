@@ -8,7 +8,7 @@ import NotFound from './components/notFound/notFound';
 
 const router = createHashRouter([
   {
-      path: '/products',
+      path: '/',
       element: <Products />
   },
   {
