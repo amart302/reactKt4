@@ -11,7 +11,7 @@ export default function Product(){
     const navigate = useNavigate();
 
     function redirection(){
-        navigate("/products")
+        navigate("/")
     }
 
     useEffect(() => {
