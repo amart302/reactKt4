@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate, useLocation } from "react-router-dom";
 
 import Rating from "../rating/Rating";
 import "./product.css";
 
 export default function Product(){
-    const { id } = useParams();
+    // const { id } = useParams();
+    const location = useLocation();
+    const path = location.pathname.split("/");
+    const id = path[path.length - 1];
     const [productData, setProductData] = useState({});
     const [loading, setLoading] = useState(true);
     const navigate = useNavigate();
